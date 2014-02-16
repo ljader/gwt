@@ -33,6 +33,14 @@
       <!-- external libs -->
       <zipfileset file="${gwt.tools}/lib/javax/validation/validation-api-1.0.0.GA.jar" prefix="${project.distname}" />
       <zipfileset file="${gwt.tools}/lib/javax/validation/validation-api-1.0.0.GA-sources.jar" prefix="${project.distname}" />
+      <!-- newer jars exluded from gwt-dev.jar -->
+      <zipfileset file="${gwt.root}/newer-jars/httpcore-4.2.5.jar" prefix="${project.distname}/newer-jars" />
+      <zipfileset file="${gwt.root}/newer-jars/httpclient-4.2.6.jar" prefix="${project.distname}/newer-jars" />
+      <zipfileset file="${gwt.root}/newer-jars/httpmime-4.2.6.jar" prefix="${project.distname}/newer-jars" />
+      <zipfileset file="${gwt.root}/newer-jars/commons-logging-1.1.3.jar" prefix="${project.distname}/newer-jars" />
+      <zipfileset file="${gwt.root}/newer-jars/commons-codec-1.9.jar" prefix="${project.distname}/newer-jars" />
+      <zipfileset file="${gwt.root}/newer-jars/commons-io-2.2.jar" prefix="${project.distname}/newer-jars" />
+      <zipfileset file="${gwt.root}/newer-jars/commons-lang-2.6.jar" prefix="${project.distname}/newer-jars" />
 
       <!-- raw files -->
       <zipfileset dir="${dist.resources}" prefix="${project.distname}" />
